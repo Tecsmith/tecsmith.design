@@ -12,7 +12,7 @@ sass:
   sass_dir: assets/css
   ## PROD: Nice and tight
   sourcemap: never
-  style: compressed
+  style: compressed 
 
 exclude:
   - 'README.DEV.md'
