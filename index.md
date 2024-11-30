@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 inline_css: "h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } h1 { text-align: center; padding-top: 1em; padding-bottom: 0; } table img { max-width: 50%;
   height: auto; } table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; }"
 ---
