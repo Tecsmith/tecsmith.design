@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 inline_css: "h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } h1 { text-align: center; padding-top: 1em; padding-bottom: 0; } table img { max-width: 50%;
   height: auto; } table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; }"
 ---
@@ -38,11 +38,27 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 
 ## <i class="far fa-keyboard"></i> The goodies
 
-| Project Name |  | Availability | Status |
+### <i class="far fa-microchip"></i> PCBs
+
+| Project Name | Layout | Extraordinary<br>feature | Availability | Status |
+|---|:---:|---|---|---|
+| VR61 Keyboard PCB | ![](assets/img/vr61-kb.png) | <ul><li>SparkFun MicroMod</li></ul> | Open Source <br> [tecsmith/vr61-keyboard-pcb](https://github.com/tecsmith/vr61-keyboard-pcb) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** |
+| VR42 Keyboard PCB | ![](assets/img/vr42-kb.png) | <ul><li>HS-USB <i>8MHz polling</i></li></ul> | Open Source <br> [tecsmith/vr42-keyboard-pcb](https://github.com/tecsmith/vr42-keyboard-pcb)| <i class="text-warning fa-solid fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
+| VR99 Keyboard PCB | ![](assets/img/vr99-kb.png) | <ul><li>Direct key scanning <i>(no matrix)</i><li>Charliepixel per-key RGB</li></li></ul> | Open Source <br> [tecsmith/vr99-keyboard-pcb](https://github.com/tecsmith/vr99-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Design completed <br> NOT prototyped <br> NOT tested |
+| VR44 Keyboard PCB <br> *a.k.a. "Companion"* | ![](assets/img/vr44-kb.png) | <ul><li>RealTime Clock</li><li>Calc mode</li><li>3 Amp 3-port USB 2 hub</li></ul> | Open Source <br> [tecsmith/vr44-keyboard-pcb](https://github.com/tecsmith/vr44-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
+| VR64 Keyboard PCB | ![](assets/img/vr61-kb.png) | <ul><li><abbr title="Hall Effect">HE</abbr> switches</li></ul> | Open Source <br> [tecsmith/vr64-keyboard-pcb](https://github.com/tecsmith/vr64-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR68 Keyboard PCB | ![](assets/img/vr68-kb.png) | <ul><li>Topre switches</li></ul> | Open Source <br> [tecsmith/vr68-keyboard-pcb](https://github.com/tecsmith/vr68-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR108 Keyboard PCB | ![](assets/img/vr108-kb.png) | <ul><li>Low profile "Choc" switches</li></ul> | Open Source <br> *-* | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+
+
+### Firmware
+
+| Project Name | Availability | Status |
+|---|---|---|
+| VR61 Keyboard firmware | Open Source <br> [tecsmith/vr61-keyboard-qmk](https://github.com/tecsmith/vr61-keyboard-qmk) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** <br> Not merged to up-stream / won't |
+
+### Cases
+
+| Project Name | Layout | Availability | Status |
 |---|:---:|---|---|
-| VR61 Keyboard PCB <br> *ft.* SparkFun MicoMod | ![](https://cdn.jsdelivr.net/gh/tecsmith/vr61-keyboard-pcb@HEAD/docs/vr61-pcb-top.png) | Open Source <br> [tecsmith/vr61-keyboard-pcb](https://github.com/tecsmith/vr61-keyboard-pcb) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** |
-| VR61 Keyboard firmware | ![](./assets/img/vr61-keyboard-layout.png) | Open Source <br> [tecsmith/vr61-keyboard-qmk](https://github.com/tecsmith/vr61-keyboard-qmk) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** <br> Not merged to up-stream / won't |
-| VR42 Keyboard PCB <br> *ft.* 8MHz polling HS-USB | ![](https://cdn.jsdelivr.net/gh/tecsmith/vr42-keyboard-pcb@HEAD/docs/vr42-revB-top.png) | Open Source <br> [tecsmith/vr42-keyboard-pcb](https://github.com/tecsmith/vr42-keyboard-pcb) | <i class="text-warning fa-solid fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
 | VR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/vr42-keyboard-case@HEAD/docs/vr42-render.png) | Open Source <br> [tecsmith/vr42-keyboard-case](https://github.com/tecsmith/vr42-keyboard-case) | <i class="text-warning fa-solid fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
-| VR99 Keyboard PCB <br> *ft.* direct key <br> &nbsp; *(no matrix)* scanning | ![](https://cdn.jsdelivr.net/gh/tecsmith/vr99-keyboard-pcb@HEAD/docs/vr99-pcb-top.png) | Open Source <br> [tecsmith/vr99-keyboard-pcb](https://github.com/tecsmith/vr99-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Design completed <br> NOT prototyped <br> NOT tested |
-| VR44 Keyboard PCB <br> *a.k.a. Companion* <br> *ft.* <br> &nbsp; - RT Clock <br> &nbsp; - Calc mode <br> &nbsp; - 3A USB hub | ![](https://cdn.jsdelivr.net/gh/tecsmith/vr44-keyboard-pcb@HEAD/docs/vr44-layout.png) | Open Source <br> [tecsmith/vr44-keyboard-pcb](https://github.com/tecsmith/vr44-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
