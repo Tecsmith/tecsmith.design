@@ -38,7 +38,7 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 
 ## <i class="far fa-keyboard"></i> The goodies
 
-### <i class="far fa-microchip"></i> PCBs
+### <i class="fas fa-microchip"></i> PCBs
 
 | Project Name | Layout | Extraordinary<br>feature | Availability | Status |
 |---|:---:|---|---|---|
@@ -50,13 +50,13 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 | VR68 Keyboard PCB | ![](assets/img/vr68-kb.png) | Topre switches | Open Source <br> [tecsmith/vr68-keyboard-pcb](https://github.com/tecsmith/vr68-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR108 Keyboard PCB | ![](assets/img/vr108-kb.png) | Low profile "Choc" switches | Open Source <br> *-* | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 
-### Firmware
+### <i class="far fa-file"></i> Firmware
 
 | Project Name | Availability | Status |
 |---|---|---|
 | VR61 Keyboard firmware | Open Source <br> [tecsmith/vr61-keyboard-qmk](https://github.com/tecsmith/vr61-keyboard-qmk) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** <br> Not merged to up-stream / won't |
 
-### Cases
+### <i class="fas fa-cube"></i> Cases
 
 | Project Name | Layout | Availability | Status |
 |---|:---:|---|---|
