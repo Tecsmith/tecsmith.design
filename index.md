@@ -50,10 +50,10 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 | VR01 Keyboard PCB <br> *"WHID"* | ![](assets/img/vr01-kb.png) | ⦁ One key sampler<br>⦁ XIAO ESP32 Wireless module | Open Source <br> [tecsmith/vr01-keyboard-pcb](https://github.com/tecsmith/vr01-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
 | VR44 Keyboard PCB <br> *a.k.a. "Companion"* | ![](assets/img/vr44-kb.png) | ⦁ RealTime Clock<br>⦁ Calc mode<br>⦁ 3 Amp 3-port USB 2 hub | Open Source <br> [tecsmith/vr44-keyboard-pcb](https://github.com/tecsmith/vr44-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
 | VR64 Keyboard PCB | ![](assets/img/vr61-kb.png) | ⦁ <abbr title="Hall Effect">HE</abbr> switches | Open Source <br> [tecsmith/vr64-keyboard-pcb](https://github.com/tecsmith/vr64-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
-| VR68 Keyboard PCB | ![](assets/img/vr68-kb.png) | ⦁ Topre switches | Open Source <br> [tecsmith/vr68-keyboard-pcb](https://github.com/tecsmith/vr68-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR67 Keyboard PCB | ![](assets/img/vr67-kb.png) | ⦁ Topre switches | Open Source <br> [tecsmith/vr67-keyboard-pcb](https://github.com/tecsmith/vr67-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR82 Keyboard PCB | ![](assets/img/vr82-kb.png) | ⦁ ¿? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR108 Keyboard PCB | ![](assets/img/vr108-kb.png) | ⦁ ¿? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
-| VR21 Keyboard PCB | ![](assets/img/vr21-kb.png) | ⦁ <u>Open Source Wireless Tri-mode</u> | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR21 Keyboard PCB | ![](assets/img/vr21-kb.png) | ⦁ ¿<u>Open Source</u> Wireless Tri-mode? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR Keyboard PCB <br> "Planck"-clone | ![](assets/img/vr47-kb.png) | ⦁ ¿?  | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 
 ### <i class="far fa-file"></i> Firmware
