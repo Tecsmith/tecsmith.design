@@ -1,7 +1,7 @@
 ---
 layout: base
 inline_css: "h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } h1 { text-align: center; padding-top: 1em; padding-bottom: 0; } table img { max-width: 50%;
-  height: auto; } table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; }"
+  height: auto; } table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; } .img-kb { width: 320px; height: auto; }"
 ---
 
 # Welcome to tecsmith.design
@@ -55,16 +55,19 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 | VR108 Keyboard PCB | ![](assets/img/vr108-kb.png){: .img-kb } | ⦁ ¿? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR21 Keyboard PCB | ![](assets/img/vr21-kb.png){: .img-kb } | ⦁ ¿<u>Open Source</u> Wireless Tri-mode? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR Keyboard PCB <br> "Planck"-clone | ![](assets/img/vr47-kb.png){: .img-kb } | ⦁ ¿?  | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
-{: .xtable }
+{: .table .table-striped }
 
 ### <i class="far fa-file"></i> Firmware
 
 | Project Name | Availability | Status |
 |---|---|---|
 | VR61 Keyboard firmware | Open Source <br> [tecsmith/vr61-keyboard-qmk](https://github.com/tecsmith/vr61-keyboard-qmk) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** <br> Not merged to up-stream / won't |
+{: .table .table-striped }
 
 ### <i class="fas fa-cube"></i> Cases
 
 | Project Name | Layout | Availability | Status |
 |---|:---:|---|---|
 | VR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/vr42-keyboard-case@HEAD/docs/vr42-render.png) | Open Source <br> [tecsmith/vr42-keyboard-case](https://github.com/tecsmith/vr42-keyboard-case) | <i class="text-warning fa-solid fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
+{: .table .table-striped }
+
