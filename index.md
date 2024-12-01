@@ -47,12 +47,14 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 | VR61 Keyboard PCB | ![](assets/img/vr61-kb.png) | ⦁ SparkFun MicroMod processor board | Open Source <br> [tecsmith/vr61-keyboard-pcb](https://github.com/tecsmith/vr61-keyboard-pcb) | <i class="text-success fa-solid fa-traffic-light"></i> **OK** |
 | VR42 Keyboard PCB | ![](assets/img/vr42-kb.png) | ⦁ Direct key scanning *(no matrix)*<br>⦁ HS-USB *(8 MHz polling)* | Open Source <br> [tecsmith/vr42-keyboard-pcb](https://github.com/tecsmith/vr42-keyboard-pcb)| <i class="text-warning fa-solid fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
 | VR99 Keyboard PCB | ![](assets/img/vr99-kb.png) | ⦁ Charliepixel per-key RGB | Open Source <br> [tecsmith/vr99-keyboard-pcb](https://github.com/tecsmith/vr99-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Design completed <br> NOT prototyped <br> NOT tested |
-| VR01 Keyboard PCB <br> *"WHID"* | *"Wireless HID"* | ⦁ ESP32 Wireless module<br>⦁ One key sampler | Open Source <br> [tecsmith/vr01-keyboard-pcb](https://github.com/tecsmith/vr01-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
+| VR01 Keyboard PCB <br> *"WHID"* | ![](assets/img/vr01-kb.png) | ⦁ One key sampler<br>⦁ XIAO ESP32 Wireless module | Open Source <br> [tecsmith/vr01-keyboard-pcb](https://github.com/tecsmith/vr01-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
 | VR44 Keyboard PCB <br> *a.k.a. "Companion"* | ![](assets/img/vr44-kb.png) | ⦁ RealTime Clock<br>⦁ Calc mode<br>⦁ 3 Amp 3-port USB 2 hub | Open Source <br> [tecsmith/vr44-keyboard-pcb](https://github.com/tecsmith/vr44-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNDER DEVELOPMENT** <br> Ideation stage only |
 | VR64 Keyboard PCB | ![](assets/img/vr61-kb.png) | ⦁ <abbr title="Hall Effect">HE</abbr> switches | Open Source <br> [tecsmith/vr64-keyboard-pcb](https://github.com/tecsmith/vr64-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 | VR68 Keyboard PCB | ![](assets/img/vr68-kb.png) | ⦁ Topre switches | Open Source <br> [tecsmith/vr68-keyboard-pcb](https://github.com/tecsmith/vr68-keyboard-pcb) | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
-| VR82 Keyboard PCB | ![](assets/img/vr82-kb.png) | ⦁ ? | &mdash; ? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
-| VR108 Keyboard PCB | ![](assets/img/vr108-kb.png) | ⦁ ? | &mdash; ? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR82 Keyboard PCB | ![](assets/img/vr82-kb.png) | ⦁ ¿? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR108 Keyboard PCB | ![](assets/img/vr108-kb.png) | ⦁ ¿? | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR21 Keyboard PCB | ![](assets/img/vr21-kb.png) | ⦁ <u>Open Source Wireless Tri-mode</u> | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
+| VR Keyboard PCB <br> "Planck"-clone | ![](assets/img/vr47-kb.png) | ⦁ ¿?  | &mdash; ¿? &mdash; | <i class="text-danger fa-solid fa-traffic-light"></i> **UNSTARTED** |
 
 ### <i class="far fa-file"></i> Firmware
 
