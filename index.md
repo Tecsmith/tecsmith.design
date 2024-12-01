@@ -15,10 +15,12 @@ The intent here is one of education. My hope is that you will be inspired to cre
 
 All my personal *(non-commissioned)* projects will be hosted here *(or rather on Github)*.
 
-The tools I use currently are:
+The tools currently used are:
 
 - EAGLE CAD, for electronics schematics and PCB design
-- QMK, for firmware builds
+- VSCode
+  - with QMK, for keyboard firmware builds
+  - with PlatformIO, for automation firmware builds
 - Fusion 360, for case design
 
 
