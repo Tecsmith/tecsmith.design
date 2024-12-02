@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{% if page.title %}{{ site.title | default: site.github.repository_name }} - {{ page.title }}{% else %}{{ site.title | default: site.github.repository_name }}{% endif %}</title>
+
+{% include seo-metadata.html %}
+
+  {%- assign darkmode = site.data.globals.darkmode | default: true -%}
+  {%- assign _temp = darkmode | downcase -%}
+  {%- if _temp == "force" -%}
+    {%- assign darkmode_switch = 2 -%}
+  {%- else -%}
+    {%- if darkmode == true -%}
+      {%- assign darkmode_switch = 1 -%}
+    {%- else -%}
+      {%- assign darkmode_switch = 0 -%}
+    {%- endif -%}
+  {%- endif-%}
+  {% case darkmode_switch %}
+    {% when 1 %}
+  <meta name="color-scheme" content="light dark">
+  <!-- Bootstrap-Dark (4), https://github.com/vinorodrigues/bootstrap-dark -->
+  <link rel="stylesheet" media="all" href="{{ site.data.meta.css.bs_dark.url }}" integrity="{{ site.data.meta.css.bs_dark.hash }}" crossorigin="anonymous">
+    {% when 2 %}
+  <meta name="color-scheme" content="dark">
+  <!-- Bootstrap-Dark (4), https://github.com/vinorodrigues/bootstrap-dark -->
+  <link rel="stylesheet" media="all" href="{{ site.data.meta.css.bs_night.url }}" integrity="{{ site.data.meta.css.bs_night.hash }}" crossorigin="anonymous">
+    {% else %}
+  <!-- Bootstrap CSS, https://getbootstrap.com/docs/4.6 -->
+  <link rel="stylesheet" media="all" href="{{ site.data.meta.css.bs_origin.url  }}" integrity="{{ site.data.meta.css.bs_origin.hash }}" crossorigin="anonymous">
+  {% endcase %}
+
+  <!-- Font-Awesome, https://fontawesome.com/v5/icons/ -->
+  <link rel="stylesheet" media="all" href="{{ site.data.meta.css.fa_origin.url  }}" integrity="{{ site.data.meta.css.fa_origin.hash }}" crossorigin="anonymous">
+
+  <!-- This Site -->
+  <link rel="stylesheet" href="{{'/assets/css/ts-jekyll-bs.css' | absolute_url | append: debugTag}}">
+  <link rel="stylesheet" href="{{'/assets/css/main.css' | absolute_url | append: debugTag }}">
+{% for extracssfile in page.extra_css %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | absolute_url }}{{ extracssfile | append: debugTag }}">
+{% endfor %}
+{% for extracsscontent in page.inline_css %}
+  <style>
+{{ extracsscontent }}
+  </style>
+{% endfor %}
+{% for extracssfile in layout.extra_css %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | absolute_url }}{{ extracssfile | append: debugTag }}">
+{% endfor %}
+{% if page.url == '/404.html' %}
+  <meta http-equiv="refresh" content="30; url={{ '/' | absolute_url}}">
+{% endif %}
+{% include custom-css.html %}
+{% include custom-metadata.html %}
+{% include custom-head.html %}
+</head>

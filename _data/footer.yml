@@ -6,4 +6,4 @@ menu:
         svg: tecsmith
       - title: Repo's on Github
         url: https://github.com/tecsmith
-        fa: github-alt fab
+        fa: fab fa-github-alt 

@@ -1,0 +1,4 @@
+## _config-prod.yml - Dev environment configs and overrides
+
+show_drafts: false
+future: false

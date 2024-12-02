@@ -6,8 +6,6 @@ description: >- # this means to ignore newlines until next back-indented value
 timezone: Australia/Sydney
 encoding: utf-8
 
-remote_theme: https://github.com/tecsmith/ts-jekyll-bs
-
 sass:
   sass_dir: assets/css
   ## PROD: Nice and tight
@@ -30,17 +28,15 @@ include:
   - 'site.webmanifest'
   - 'sitemap.xsl'
 
-plugins:
-  ## ... The Theme ...
-  - jekyll-remote-theme
+# plugins:
   ## ... More ...
-  - jekyll-feed
-  - jekyll-sitemap
-  - jemoji
-  - jekyll-avatar
-  - jekyll-last-modified-at
-  - jekyll-toc
-  - jekyll-email-protect
+#  - jekyll-feed
+#  - jekyll-sitemap
+#  - jemoji
+#  - jekyll-avatar
+#  - jekyll-last-modified-at
+#  - jekyll-toc
+#  - jekyll-email-protect
 
 ## --- jekyll-seo-tag ---
 # See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
