@@ -10,11 +10,11 @@ echo ""
 bundle exec jekyll clean
 bundle exec jekyll build --config "_config.yml,_config-prod.yml"
 
-echo "Running..."
-figlet " NPM"
-echo ""
+# echo "Running..."
+# figlet " NPM"
+# echo ""
 
-npm run build
+# npm run build
 
 echo ""
 echo "...done"

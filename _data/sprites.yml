@@ -3,7 +3,7 @@ always:
   - tecsmith-solid
 
 meta:
-  - copyright: Made by Vino, (c) 2024
+  - copyright: Made by SilvinoR, (c) 2024
 
   - id: tecsmith
     box: 512 512

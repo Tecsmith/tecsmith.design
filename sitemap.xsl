@@ -9,13 +9,13 @@
   <xsl:template match="/">
     <html>
     <head>
-      <!-- Made with <3 by Vino Rodrigues {{ '/' | absolute_url }} -->
+      <!-- Made with <3 by Silvino Rodrigues {{ '/' | absolute_url }} -->
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>{{ site.title | default: site.github.repository_name | escape }} - Sitemap</title>
       <meta name="color-scheme" content="light dark" />
-      <link href="https://cdn.jsdelivr.net/gh/vinorodrigues/bootstrap-dark@0.6.1/dist/bootstrap-dark.min.css" rel="stylesheet" media="all" />
+      <link href="assets/css/bootstrap-dark.min.css" rel="stylesheet" media="all" />
       <style>a,a:hover{text-decoration:none;}.xframe{background-color:rgba(0,0,0,0.05);}@media(prefers-color-scheme:dark){.xframe{background-color:rgba(255,255,255,0.05);}}</style>
     </head>
     <body>

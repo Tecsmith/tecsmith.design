@@ -7,7 +7,7 @@ timezone: Australia/Sydney
 encoding: utf-8
 
 sass:
-  sass_dir: assets/css
+###!!!  sass_dir: assets/css
   ## PROD: Nice and tight
   sourcemap: never
   style: compressed 
@@ -28,13 +28,13 @@ include:
   - 'site.webmanifest'
   - 'sitemap.xsl'
 
-# plugins:
+plugins:
   ## ... More ...
 #  - jekyll-feed
 #  - jekyll-sitemap
-#  - jemoji
-#  - jekyll-avatar
-#  - jekyll-last-modified-at
+  - jemoji
+  - jekyll-avatar
+  - jekyll-last-modified-at
 #  - jekyll-toc
 #  - jekyll-email-protect
 
