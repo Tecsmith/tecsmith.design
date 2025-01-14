@@ -59,6 +59,5 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au).
 
 | Project Name | Layout | Availability | Status |
 |---|:---:|---|---|
-| SR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/vs42-keyboard-case@HEAD/docs/sr42-render.png) | Open Source <br> [tecsmith/sr42-keyboard-case](https://github.com/tecsmith/sr42-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
+| SR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr42-keyboard-case@HEAD/docs/sr42-render.png) | Open Source <br> [tecsmith/sr42-keyboard-case](https://github.com/tecsmith/sr42-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **UNDER TESTING** <br> Design completed <br> In testing phase |
 {: .table .table-striped }
-
