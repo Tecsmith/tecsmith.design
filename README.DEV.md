@@ -69,4 +69,4 @@ But for *<ins>development</ins>*, one will need:
 &nbsp;<br>&nbsp;
 
 ---
-Made with &#9829; by **Silvino Rodrigues**
+Made with &#9829; by **Silvino R**

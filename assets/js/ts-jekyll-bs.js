@@ -3,7 +3,7 @@
 ---
 
 /*!
- *  ts-jekyll-bs template JS, © 2024 Silvino Rodrigues (@silvinor)
+ *  ts-jekyll-bs template JS, © 2024 Silvino R (@silvinor)
  *  See: https://github.com/Tecsmith/ts-jekyll-bs
  */
 

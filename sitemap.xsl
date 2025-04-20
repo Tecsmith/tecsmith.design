@@ -9,7 +9,7 @@
   <xsl:template match="/">
     <html>
     <head>
-      <!-- Made with <3 by Silvino Rodrigues {{ '/' | absolute_url }} -->
+      <!-- Made with <3 by Silvino R {{ '/' | absolute_url }} -->
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />

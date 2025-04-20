@@ -9,7 +9,7 @@ inline_css: "h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } h1 { te
 ## <i class="far fa-question-circle"></i> About
 
 <img src="assets/img/silvinor.min.svg" width="128" height="128" class="float-left img-thumbnail rounded-circle shadow mr-4">
-On this site you will find Silvino Rodrigues' custom keyboard and home automation device designs.
+On this site you will find Silvino R's custom keyboard and home automation device designs.
 
 The intent here is one of education. My hope is that you will be inspired to create your own electronics and embeded software products.
 
