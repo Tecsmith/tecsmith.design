@@ -1,30 +1,32 @@
 ---
-# Front Matter comment to ensure Jekyll properly reads file.
+# Front matter needed to trigger Jekyll conversion
 ---
 
-{%- include globals.liquid -%}
+{%- include meta.liquid -%}
+{%- assign title = site.title | default: site.github.repository_name | escape -%}
 
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="3.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">
   <xsl:template match="/">
-    <html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-      <!-- Made with <3 by Silvino R {{ '/' | absolute_url }} -->
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>{{ site.title | default: site.github.repository_name | escape }} - Sitemap</title>
-      <meta name="color-scheme" content="light dark" />
-      <link href="assets/css/bootstrap-dark.min.css" rel="stylesheet" media="all" />
-      <style>a,a:hover{text-decoration:none;}.xframe{background-color:rgba(0,0,0,0.05);}@media(prefers-color-scheme:dark){.xframe{background-color:rgba(255,255,255,0.05);}}</style>
+      <title>{{ title }} - Sitemap</title>
+      <meta name="color-scheme" content="{{ meta.color_scheme | default: 'light dark' }}" />
+      <link rel="stylesheet" media="all" href="{{ meta.css.bootstrap.url | absolute_url }}" integrity="{{ meta.css.bootstrap.hash | default: '' }}" crossorigin="anonymous" />
+      <style>a,a:hover{text-decoration:none;}.table{margin-top:0.5rem}.table thead td,.table thead th{border-top:none}</style>
     </head>
     <body>
       <div class="container my-3">
         <header class="row">
-          <h1 class="col h3 mt-5"><a href="{{ '/' | absolute_url }}"><img src="{{ 'favicon.svg' | absolute_url | append: debugTag }}" width="32" height="32" alt=""/><span> {{ site.title | default: site.github.repository_name | escape }}</span></a><small class="text-muted"> - Sitemap</small></h1>
+          <h1 class="col h3 mt-5"><a href="{{ '/' | absolute_url }}"><img style="width:auto;height:1.5rem;margin-bottom:0.25rem" src="{{ '/assets/favicon/favicon.svg' | absolute_url }}" alt="{{ title }}" /><span> {{ site.title | default: site.github.repository_name | escape }}</span></a><small class="text-muted"> - Sitemap</small></h1>
         </header>
         <div class="row my-2 p-3">
-          <div class="col xframe rounded rounded-lg border shadow shadow-lg">
+          <div class="col rounded rounded-lg border shadow">
             <table class="table table-striped">
             <thead>
               <tr>
@@ -42,7 +44,7 @@
                       <xsl:attribute name="href">
                         <xsl:value-of select="sitemap:loc"/>
                       </xsl:attribute>
-                      <pre><xsl:value-of select="sitemap:loc"/></pre>
+                      <code><xsl:value-of select="sitemap:loc"/></code>
                     </a>
                   </td>
                   <td><xsl:value-of select="sitemap:lastmod" /></td>
@@ -53,7 +55,7 @@
           </div>
         </div>
         <footer class="row">
-          <small class="col text-muted"><span>&#169; 2024 </span><a href="{{ '/' | absolute_url }}">Tecsmith</a></small>
+          <small class="col text-muted text-center">&#169; <span class="copyright">{{ "now" | date: "%Y" }}</span> | <a href="{{ '/' | absolute_url }}">{{ title }}</a></small>
         </footer>
       </div>
     </body>

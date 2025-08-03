@@ -1,3 +1,5 @@
+outer:
+  class: "container"
 menu:
   - title: Other Tecsmith sites
     items:
@@ -6,4 +8,4 @@ menu:
         svg: tecsmith
       - title: Repo's on Github
         url: https://github.com/tecsmith
-        fa: fab fa-github-alt 
+        fa: fab fa-github-alt

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{%- assign theTag = page.tag | titleize | escape -%}
+<h1>Knowledge Base: <small class="text-muted"><i class="fas fa-tag"></i> {{ theTag }}</small></h1>
+
+<ul class="list-unstyled mt-4">
+  {% for post in site.tags[page.tag] %}
+    <li class="mb-2">
+      {%- include my-post-listing.html post=post -%}
+    </li>
+  {% endfor %}
+</ul>
+  

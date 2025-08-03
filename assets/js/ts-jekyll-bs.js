@@ -1,134 +1,210 @@
 ---
-# // Front Matter comment to ensure Jekyll properly reads file.
+# Front matter needed to trigger Jekyll conversion
 ---
 
+{%- include meta.liquid -%}
+{%- assign detectOs = meta.theme.features.detect_os | default: 0 -%}
+{%- assign externalLinks = meta.theme.features.external_links | default: 0 -%}
+{%- assign toTopBtn = meta.theme.features.to_top_btn | default: 0 -%}
+{%- assign toolTips = meta.theme.features.tool_tips | default: 0 -%}
+
+'use strict';
+
 /*!
- *  ts-jekyll-bs template JS, © 2024 Silvino R (@silvinor)
+ *  ts-jekyll-bs template JS, (c) 2024 Silvino Rodrigues (@silvinor)
  *  See: https://github.com/Tecsmith/ts-jekyll-bs
  */
 
-// --- Detect OS From Browser ---
+/* FEATURES:
+ *   detectOs:      {{ detectOs }}
+ *   externalLinks: {{ externalLinks }}
+ *   toTopBtn:      {{ toTopBtn }}
+ *   toolTips:      {{ toolTips }}
+ */
 
-function detectOS() {
-  var userAgent = window.navigator.userAgent,
-    platform = window.navigator.platform,
-    macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-    windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-    iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-    os = null;
+{%- if detectOs > 0 -%}
+  {%- raw %}
+  {% endraw -%}
 
-  if (macosPlatforms.indexOf(platform) !== -1) {
-    os = 'macos';
-  } else if (iosPlatforms.indexOf(platform) !== -1) {
-    os = 'ios';
-  } else if (windowsPlatforms.indexOf(platform) !== -1) {
-    os = 'windows';
-  } else if (/Android/.test(userAgent)) {
-    os = 'android';
-  } else if (!os && /Linux/.test(platform)) {
-    os = 'linux';
-  } else {
-    os = 'unknown';
+  /* ............................... *
+   * Detect OS From Browser function *
+   * ............................... */
+
+  function detectOS() {
+    var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+      os = null;
+    if (macosPlatforms.indexOf(platform) !== -1) {
+      os = 'macos';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = 'ios';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = 'windows';
+    } else if (/Android/.test(userAgent)) {
+      os = 'android';
+    } else if (!os && /Linux/.test(platform)) {
+      os = 'linux';
+    } else {
+      os = 'unknown';
+    }
+    return os;
   }
 
-  return os;
+{%- endif -%}
+
+{%- raw %}
+{% endraw -%}
+/* -------------- *
+ * Copyright Year *
+ * -------------- */
+
+function adjustCopyrightYear() {
+  var copyrightYear = document.getElementById('copyright');
+  var thisYear = new Date().getFullYear();
+  if (thisYear !== Number(copyrightYear.textContent)) {
+    copyrightYear.textContent = copyrightYear.textContent + '-' + thisYear;
+  }
 }
 
-// --- General Doc Ready ---
+{%- if externalLinks > 0 -%}
+  {%- raw %}
+  {% endraw -%}
+  /* ------------------- *
+   * Mark external links *
+   * ------------------- */
 
-$( document ).ready(function() {
-  // --- Change copyright year ---
-  var copyright_year = $('#copyright');
-  this_year = new Date().getFullYear();
-  if (this_year != Number( copyright_year.text() )) copyright_year.text (  copyright_year.text() + '-' + this_year );
-
-  // --- Modify external links, by adding an ".external" class ---
-  $('a').each(function() {
-    let href = $(this).attr('href');
-    if (typeof href !== 'undefined' && href !== false) {
-      if ( (!href.startsWith('{{ '/' | absolute_url }}') ) && 
-        ( href.startsWith('https://') || href.startsWith('http://') ) ) {
-        $(this).addClass('external');
+  function adjustExternalLinks() {
+    const siteRoot = '{{ "/" | absolute_url }}'; // left intact for Jekyll
+    document.querySelectorAll('a[href]').forEach(a => {
+      const href = a.getAttribute('href');
+      if (
+        !href.startsWith(siteRoot) &&
+        (href.startsWith('https://') || href.startsWith('http://'))
+      ) {
+        {% if externalLinks != 2 -%}
+        a.setAttribute('target', '_blank');
+        {% endif -%}
+        {% if externalLinks != 1 -%}
+        a.classList.add('external');
+        {%- endif %}
       }
-    }
-  });
-  $('.external').each(function() {
-    $(this).attr('target', '_blank');
-  });
-
-  // --- Add detect OS class to the body tag ---
-  let os = detectOS();
-  if (os !== null)
-    $('body').addClass('os-' + os);
-
-  // --- Add dots to the ABN and cut out spaces ---
-  $('.middot-spaces').each(function() {
-    var s = $(this).text();
-    var s = s.replace(/[ -]/gi, '<span class="middot"></span>');
-    $(this).html( s );
-    $(this).removeClass('middot-spaces');
-    $(this).addClass('is-middot');
-  });
-
-});
-
-// --- Enable Scroll To Top Button ---
-
-$( document ).ready(function() {
-  tof_button.addClass('collapse');
-  tof_button.addClass('btn-floating');
-});
-
-let tof_button = $("#btn-to-top");
-var lastScroll = 0;
-var isScrollingUp = false;
-
-function showScrollBtn() {
-  tof_button.addClass('show');
-  isScrollingUp = true;
-}
-
-function hideScrollBtn() {
-  tof_button.removeClass('show');
-  isScrollingUp = false;
-}
-
-tof_button.bind( 'click', function() {
-  lastScroll = 0;
-  hideScrollBtn();
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
-
-window.onscroll = function () {
-  scrollBtnFunction();
-};
-
-function scrollBtnFunction() {
-  var currentScroll = $(this).scrollTop();
-
-  if ( currentScroll < 80 ) {
-    if (isScrollingUp) {
-      hideScrollBtn();
-    }
-  } else if ( (lastScroll < currentScroll) && isScrollingUp ) {
-    hideScrollBtn();
-  } else if ( (lastScroll > currentScroll) && !isScrollingUp ) {
-    showScrollBtn();
+    });
   }
+{%- endif -%}
 
-  lastScroll = currentScroll;
-};
 
-// --- Nav-bar Double Click Function ---
+{%- raw %}
+{% endraw -%}
+/* ------------------------------------------------ *
+ * Navbar double-click: follow dropdown parent link *
+ * ------------------------------------------------ */
 
-$( document ).ready(function() {
-  $('a.dropdown-toggle').each( function() {
-    let url=$(this).attr('href');
-    if (url != '') {
-      $(this).on('dblclick', function() {
-        window.location.href = url;
-      });
-    }
+document.querySelectorAll('a.dropdown-toggle[href]').forEach(link => {
+  const url = link.getAttribute('href');
+  if (url) {
+    link.addEventListener('dblclick', () => { window.location.href = url; });
+  }
+});
+
+{%- if toolTips > 0 -%}
+  {%- raw %}
+  {% endraw -%}
+  /* ----------------- *
+   * Swith on Tooltips *
+   * ----------------- */
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   });
+{%- endif -%}
+
+{%- if toTopBtn > 0 -%}
+  {%- raw %}
+  {% endraw -%}
+  /* ------------- *
+   * To Top Button *
+   * ------------- */
+
+  function setUpToTopButton() {
+
+    let to_top_button = document.getElementById("btn-to-top");
+    var lastScroll = 0;
+    var isScrollingUp = false;
+
+    function remToPx(rem) {
+      return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+
+    function showScrollBtn() {
+      to_top_button.classList.add('show');
+      isScrollingUp = true;
+    }
+
+    function hideScrollBtn() {
+      to_top_button.classList.remove('show');
+      isScrollingUp = false;
+    }
+
+    function scrollBtnFunction() {
+      var currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+      let topPad = remToPx(5);
+
+      if (currentScroll < topPad) {
+        if (isScrollingUp) {
+          hideScrollBtn();
+        }
+      } else if (lastScroll < currentScroll && isScrollingUp) {
+        hideScrollBtn();
+      } else if (lastScroll > currentScroll && !isScrollingUp) {
+        showScrollBtn();
+      }
+
+      lastScroll = currentScroll;
+    }
+
+    if (!to_top_button) return; // Exit early if the button doesn't exist
+
+    to_top_button.classList.add("collapse");
+    to_top_button.classList.add("btn-floating");
+
+    to_top_button.addEventListener("click", function () {
+      lastScroll = 0;
+      hideScrollBtn();
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+
+    window.onscroll = function () {
+      scrollBtnFunction();
+    };
+  }
+{%- endif -%}
+
+{%- raw %}
+{% endraw -%}
+/* ========================= *
+ * Master Doc Ready Function *
+ * ------------------------- */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  {% if detectOs > 0 -%}
+    document.body.classList.add(`os-${detectOS()}`);
+  {%- endif %}
+
+  adjustCopyrightYear();
+
+  {% if externalLinks > 0 -%}
+    adjustExternalLinks();
+  {%- endif %}
+
+  {% if toTopBtn > 0 -%}
+    setUpToTopButton();
+  {%- endif %}
+
 });

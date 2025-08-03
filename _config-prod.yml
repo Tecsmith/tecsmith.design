@@ -2,3 +2,10 @@
 
 show_drafts: false
 future: false
+
+sass:
+  style: compressed
+  sourcemap: never
+
+liquid:
+  error_mode: strict

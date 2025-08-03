@@ -1,7 +1,0 @@
-// from: https://github.com/silvinor/bootstrap-dark , (c) 2021 Silvino R
-
-@mixin prefers-color-scheme( $scheme: dark ) {
-  @media (prefers-color-scheme: #{$scheme}) {
-    @content;
-  }
-}

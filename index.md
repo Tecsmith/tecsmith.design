@@ -1,7 +1,11 @@
 ---
 layout: default
-inline_css: "h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } h1 { text-align: center; padding-top: 1em; padding-bottom: 0; } table img { max-width: 50%;
-  height: auto; } table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; } .modal-xl { max-width: calc(1235px + 2.1rem); }"
+style: |
+  h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } 
+  h1 { text-align: center; padding-top: 1em; padding-bottom: 0; }
+  table img { max-width: 50%; height: auto; } 
+  table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; }
+  .modal-xl { max-width: calc(1235px + 2.1rem); }
 ---
 
 # Welcome to tecsmith.design

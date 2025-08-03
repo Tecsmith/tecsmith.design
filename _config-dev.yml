@@ -4,17 +4,26 @@
 
 ## Accepts connections on port 4000 from any source
 port: 4000
-host: 0.0.0.0
+# host: localhost
 livereload: true
 livereload_port: 4001
 open_url: true
 
 ## Don't compress SASS output
 sass:
-  style: full
+  style: expanded
+  sourcemap: always
+  quiet_deps: true
 
 ## Building
 incremental: false
 show_drafts: true
 future: true
 unpublished: true
+
+liquid:
+  error_mode: warn
+
+debug: true
+include:
+  - .well-known/appspecific/com.chrome.devtools.json

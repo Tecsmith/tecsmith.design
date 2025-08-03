@@ -24,7 +24,6 @@ exclude:
 include:
   ## --- from theme ---
   - '404.html'
-  - 'browserconfig.xml'
   - 'site.webmanifest'
   - 'sitemap.xsl'
 

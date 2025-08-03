@@ -1,11 +1,10 @@
 ---
-# Front Matter comment to ensure Jekyll properly reads file.
 ---
 
-{%- comment -%}
-# If you need to create a `.htaccess` file dynamically, then rename or copy this file to `.htaccess`.
-# The content of this file is dynamically generated from the `_data/htaccess.yml` data file.
-{%- endcomment -%}
+{%- assign htaData = site.data.htaccess | default: false -%}
+{%- if htaData == false  -%}
+  {%- assign htaData = site.data.sample-htaccess -%}
+{%- endif -%}
 
 # turn off directory browsing
 IndexIgnore *
@@ -22,7 +21,7 @@ ErrorDocument 404 /404.html
   # static pages
   RewriteRule ^contact/?$ /about/contact.html [R=308,L]
 
-{%- for item in site.data.htaccess.redirect %}
+{%- for item in htaData.redirect %}
   RewriteRule ^{{ item.from  }}$ {{ item.to | default: '\' }} [R={{ item.code | default: '302' }},L]
 {%- endfor %}
 
@@ -42,7 +41,7 @@ ErrorDocument 404 /404.html
 # ----- Begin GZIP headers -----
 <ifmodule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
-{%- for item in site.data.htaccess.compress %}  
+{%- for item in htaData.compress %}
   AddOutputFilterByType DEFLATE {{ item }}
 {%- endfor %}
 
@@ -54,15 +53,15 @@ ErrorDocument 404 /404.html
 </ifmodule>
 
 # ----- Begin Expire (browser caching) headers -----
-<IfModule mod_expires.c>  
+<IfModule mod_expires.c>
   # Turn on the module.
   ExpiresActive on
   # Set the default expiry times.
   ExpiresDefault "access plus 2 days"
-{%- for item in site.data.htaccess.cache %}
+{%- for item in htaData.cache %}
   ExpiresByType {{ item.type }} "access plus {{ item.keep }}"
 {%- endfor %}
-</IfModule>  
+</IfModule>
 
 Header set Access-Control-Allow-Origin "*"
 Header set Access-Control-Allow-Methods "GET"
