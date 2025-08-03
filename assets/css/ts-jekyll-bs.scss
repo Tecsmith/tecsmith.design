@@ -10,10 +10,9 @@
  */
 
 /* Use some of Bootstrap 5's modules */
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
-@import "../../node_modules/bootstrap/scss/mixins/color-scheme";
+@import "variables";
+@import "breakpoints";
+@import "color-scheme";
 
 
 // ----------------
