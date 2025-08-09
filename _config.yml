@@ -7,10 +7,13 @@ timezone: Australia/Sydney
 encoding: utf-8
 
 sass:
-###!!!  sass_dir: assets/css
-  ## PROD: Nice and tight
+  load_paths:
+    - node_modules/bootstrap/scss/
+  sass_dir: assets/css
+  # *** PROD: Nice and tight ***
   sourcemap: never
-  style: compressed 
+  style: compressed
+  quiet_deps: true
 
 exclude:
   - 'README.DEV.md'

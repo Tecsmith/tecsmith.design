@@ -9,10 +9,15 @@
  *  See: https://github.com/Tecsmith/ts-jekyll-bs
  */
 
-/* Use some of Bootstrap 5's modules */
+/* Borrow some of Bootstrap 5's modules */
+// Make sure your _config.yml has:
+// sass:
+//   load_paths:
+//     - node_modules/bootstrap/scss/
+@import "functions";
+@import "mixins/breakpoints";
+@import "mixins/color-scheme";
 @import "variables";
-@import "breakpoints";
-@import "color-scheme";
 
 
 // ----------------

@@ -1,6 +1,5 @@
 ---
 # Front matter needed to trigger Jekyll conversion
-# Front matter for this theme
 ---
 
 'use strict';
