@@ -10,8 +10,8 @@ theme:
     class: container my-4
   footer:
     class: bg-footer my-3 pt-3
-    copyright: 2024
-    brand: "tecsmith.design"
+    copyright: 2022
+    brand: "design.tecsmith.co"
   features:
     detect_os: 0       # 0 (default) = no, 1 = yes
     external_links: 0  # 0 (default) = off, 1 = make target _blank, 2 = add icon, 3 = both

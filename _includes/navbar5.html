@@ -84,13 +84,13 @@
               ****************************
             -->{%- endcomment -%}
 
-          <li class="nav-item dropdown
-            {%- if forloop.first %} first{% endif -%}
-            {%- if forloop.last %} last{% endif -%}
-            {%- if forloop.length == 1 %} only{% endif -%}
-            {%- if page.active == item.active %} active{% endif -%}
-            {{- ' item-' | append: forloop.index -}}
-            ">
+            <li class="nav-item dropdown
+              {%- if forloop.first %} first{% endif -%}
+              {%- if forloop.last %} last{% endif -%}
+              {%- if forloop.length == 1 %} only{% endif -%}
+              {%- if page.active == item.active %} active{% endif -%}
+              {{- ' item-' | append: forloop.index -}}
+              ">
               <a class="nav-link dropdown-toggle
                 {%- if item.class %}{{ ' ' | append: item.class }}{% endif -%}
                 "
@@ -152,6 +152,13 @@
         {%- endfor -%}
 
       </ul>
+      {%- if navBar.action -%}
+        <form class="d-flex">
+          {%- for item in navBar.action -%}
+            <a class="btn btn-sm {{ item.class }}" href="{{ item.url | absolute_url }}">{{ item.button }}</a>
+          {%- endfor -%}
+        </form>
+      {%- endif -%}
     </div>
 
     {%- case navbarContainer -%}
