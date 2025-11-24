@@ -1,11 +1,12 @@
 ---
 layout: default
-style: |
+style: >-
   h1, h2, h3, h4 { padding-bottom: 0.5em; padding-top: 1em; } 
   h1 { text-align: center; padding-top: 1em; padding-bottom: 0; }
   table img { max-width: 50%; height: auto; } 
   table td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; white-space: nowrap; }
   .modal-xl { max-width: calc(1235px + 2.1rem); }
+  .retired { min-height: 23px; min-width: 92px; display: block; }
 ---
 
 # Welcome to `design.tecsmith.co`
@@ -49,8 +50,8 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au/conta
 |---|:---:|---|---|---|
 | SR01 Keyboard PCB <br> *"WHID"* | [![](assets/img/sr01-kb.png){: .img-kb }](assets/img/sr01-kb.png "SR01 'One-Key' Keyboard"){: .modal-link} | ⦁ One key sampler<br>⦁ XIAO ESP32 Wireless module | Open Source <br> [tecsmith/sr01-keyboard-pcb](https://github.com/tecsmith/sr01-keyboard-pcb) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 | SR42 Keyboard PCB | [![](assets/img/sr42-kb.png){: .img-kb }](assets/img/sr42-kb.png "SR42 '40%' Keyboard"){: .modal-link} | ⦁ Direct key scanning<br>&nbsp; *(no matrix)*<br>⦁ HS-USB *(8 MHz polling)* | Open Source <br> [tecsmith/sr42-keyboard-pcb](https://github.com/tecsmith/sr42-keyboard-pcb)| <i class="text-warning fas fa-traffic-light"></i> **WIP** |
-| SR61 Keyboard PCB | [![](assets/img/sr61-kb.png){: .img-kb }](assets/img/sr61-kb.png "SR61 'MicroMod' Keyboard"){: .modal-link} | ⦁ SparkFun MicroMod<br>&nbsp; processor board | Open Source <br> [tecsmith/sr61-keyboard-pcb](https://github.com/tecsmith/sr61-keyboard-pcb) | <i class="text-success fas fa-traffic-light"></i> **OK**, but RETIRED |
-| SR99 Keyboard PCB | [![](assets/img/sr99-kb.png){: .img-kb }](assets/img/sr99-kb.png "SR99 '980' Keyboard"){: .modal-link} | ⦁ Charliepixel per-key RGB | Open Source <br> [tecsmith/sr99-keyboard-pcb](https://github.com/tecsmith/sr99-keyboard-pcb) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+| SR61 Keyboard PCB | [![](assets/img/sr61-kb.png){: .img-kb }](assets/img/sr61-kb.png "SR61 'MicroMod' Keyboard"){: .modal-link} | ⦁ SparkFun MicroMod<br>&nbsp; processor board | Open Source <br> [tecsmith/sr61-keyboard-pcb](https://github.com/tecsmith/sr61-keyboard-pcb) | <i class="text-success fas fa-traffic-light"></i> **OK**, but ![RETITED](assets/img/retired.svg){: .retired } |
+R99 Keyboard PCB | [![](assets/img/sr99-kb.png){: .img-kb }](assets/img/sr99-kb.png "SR99 '980' Keyboard"){: .modal-link} | ⦁ Charliepixel per-key RGB | Open Source <br> [tecsmith/sr99-keyboard-pcb](https://github.com/tecsmith/sr99-keyboard-pcb) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 {: .table .table-striped }
 
 <!--

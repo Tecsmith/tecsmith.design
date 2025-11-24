@@ -3,7 +3,7 @@ theme:
   navbar:
     link: /
     logo: "/assets/favicon/favicon.svg"
-    brand: "tecsmith.design"
+    brand: "design.tecsmith.co"
     container: 1 # 1 = nav > div:.container; 2 = div:.container > nav; 0 = nav
     class: "navbar-dark navbar-brand-3 bg-primary bg-brand-3"
   main:
