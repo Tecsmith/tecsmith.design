@@ -13,7 +13,7 @@ style: >-
 
 ## <i class="far fa-question-circle"></i> About
 
-<img src="assets/img/silvinor.min.svg" width="128" height="128" class="float-left img-thumbnail rounded-circle shadow mr-4">
+<img src="assets/img/silvinor.min.jpg" width="128" height="128" class="float-left img-thumbnail rounded-circle shadow mr-4">
 On this site you will find Silvino R's <u>public</u><sup>1</sup> custom keyboard and home automation device designs.
 
 The intent here is one of education. My hope is that you will be inspired to create your own electronics and embeded software products.
@@ -51,7 +51,7 @@ Reach me by visiting the contact page on [tecsmith.au](https://tecsmith.au/conta
 | SR01 Keyboard PCB <br> *"WHID"* | [![](assets/img/sr01-kb.png){: .img-kb }](assets/img/sr01-kb.png "SR01 'One-Key' Keyboard"){: .modal-link} | ⦁ One key sampler<br>⦁ XIAO ESP32 Wireless module | Open Source <br> [tecsmith/sr01-keyboard-pcb](https://github.com/tecsmith/sr01-keyboard-pcb) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 | SR42 Keyboard PCB | [![](assets/img/sr42-kb.png){: .img-kb }](assets/img/sr42-kb.png "SR42 '40%' Keyboard"){: .modal-link} | ⦁ Direct key scanning<br>&nbsp; *(no matrix)*<br>⦁ HS-USB *(8 MHz polling)* | Open Source <br> [tecsmith/sr42-keyboard-pcb](https://github.com/tecsmith/sr42-keyboard-pcb)| <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 | SR61 Keyboard PCB | [![](assets/img/sr61-kb.png){: .img-kb }](assets/img/sr61-kb.png "SR61 'MicroMod' Keyboard"){: .modal-link} | ⦁ SparkFun MicroMod<br>&nbsp; processor board | Open Source <br> [tecsmith/sr61-keyboard-pcb](https://github.com/tecsmith/sr61-keyboard-pcb) | <i class="text-success fas fa-traffic-light"></i> **OK**, but ![RETITED](assets/img/retired.svg){: .retired } |
-R99 Keyboard PCB | [![](assets/img/sr99-kb.png){: .img-kb }](assets/img/sr99-kb.png "SR99 '980' Keyboard"){: .modal-link} | ⦁ Charliepixel per-key RGB | Open Source <br> [tecsmith/sr99-keyboard-pcb](https://github.com/tecsmith/sr99-keyboard-pcb) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+SR99 Keyboard PCB | [![](assets/img/sr99-kb.png){: .img-kb }](assets/img/sr99-kb.png "SR99 '980' Keyboard"){: .modal-link} | ⦁ Charliepixel per-key RGB | Open Source <br> [tecsmith/sr99-keyboard-pcb](https://github.com/tecsmith/sr99-keyboard-pcb) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 {: .table .table-striped }
 
 <!--
@@ -87,11 +87,14 @@ R99 Keyboard PCB | [![](assets/img/sr99-kb.png){: .img-kb }](assets/img/sr99-kb.
 
 | Project Name | Layout | Availability | Status |
 |---|:---:|---|---|
-| SR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr42-keyboard-case@HEAD/docs/sr42-render.png) | Open Source <br> [tecsmith/sr42-keyboard-case](https://github.com/tecsmith/sr42-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+| SR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr42-keyboard@HEAD/docs/img/sr42kb-render-full.png) | Open Source <br> [tecsmith/sr42-keyboard-case](https://github.com/tecsmith/sr42-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+| SR68 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr68-keyboard@HEAD/docs/img/sr68kb-render-full.png) | Open Source <br> [tecsmith/sr68-keyboard-case](https://github.com/tecsmith/sr68-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+| SR99 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr99-keyboard-case@HEAD/docs/img/sr99kb-render-full.png) | Open Source <br> [tecsmith/sr99-keyboard-case](https://github.com/tecsmith/sr99-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+
 {: .table .table-striped }
 
 ---
 
 <small>
-<sup>1</sup> Opensource projects
+<sup>1</sup> Open-source projects
 </small>

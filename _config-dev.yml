@@ -4,7 +4,7 @@
 
 ## Accepts connections on port 4000 from any source
 port: 4000
-host: 10.0.0.80
+host: 127.0.0.1
 livereload: true
 livereload_port: 4001
 open_url: true
