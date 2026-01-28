@@ -89,7 +89,7 @@ SR99 Keyboard PCB | [![](assets/img/sr99-kb.png){: .img-kb }](assets/img/sr99-kb
 |---|:---:|---|---|
 | SR42 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr42-keyboard@HEAD/docs/img/sr42kb-render-full.png) | Open Source <br> [tecsmith/sr42-keyboard-case](https://github.com/tecsmith/sr42-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 | SR68 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr68-keyboard@HEAD/docs/img/sr68kb-render-full.png) | Open Source <br> [tecsmith/sr68-keyboard-case](https://github.com/tecsmith/sr68-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
-| SR99 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr99-keyboard-case@HEAD/docs/img/sr99kb-render-full.png) | Open Source <br> [tecsmith/sr99-keyboard-case](https://github.com/tecsmith/sr99-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
+| SR99 Keyboard Case | ![](https://cdn.jsdelivr.net/gh/tecsmith/sr99-keyboard@HEAD/docs/img/sr99kb-render-full.png) | Open Source <br> [tecsmith/sr99-keyboard-case](https://github.com/tecsmith/sr99-keyboard-case) | <i class="text-warning fas fa-traffic-light"></i> **WIP** |
 
 {: .table .table-striped }
 
