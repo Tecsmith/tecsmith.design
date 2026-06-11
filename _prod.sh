@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash
 
 export JEKYLL_ENV="production"
 
@@ -7,8 +7,8 @@ echo "Running..."
 figlet " Jekyll"
 echo ""
 
-bundle exec jekyll clean
-bundle exec jekyll build --config "_config.yml,_config-prod.yml"
+bundler exec jekyll clean
+bundler exec jekyll build --config "_config.yml,_config-prod.yml"
 
 # echo "Running..."
 # figlet " NPM"
